@@ -1,3 +1,4 @@
+import Scene1 from './scene-1/index';
 /* eslint-disable max-len */
 /* This is how you use the environments variables passed by the webpack.DefinePlugin */
 
@@ -61,6 +62,8 @@ const main = () => {
         })
         .catch(error => console.error('Chunk loading failed', error));
     });
+
+    console.log(new Scene1());
   }
 };
 
